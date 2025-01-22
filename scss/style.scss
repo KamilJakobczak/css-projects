@@ -55,5 +55,49 @@ body {
     &:hover:before {
       transform: translateX(0);
     }
+    &:hover {
+      color: white;
+    }
+  }
+  #button_3 {
+    padding: 40px 80px;
+    color: brown;
+    font-size: 45px;
+    letter-spacing: 2px;
+    border: 5px solid brown;
+    transition: 1s;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: brown;
+      z-index: -1;
+      transform: rotateX(90deg);
+      transition: 0.75s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: brown;
+      z-index: -1;
+      transform: rotateY(90deg);
+      transition: 0.75s;
+    }
+    &:hover:before {
+      transform: rotateX(0deg);
+    }
+    &:hover:after {
+      transform: rotateY(0deg);
+    }
+    &:hover {
+      color: white;
+    }
   }
 }

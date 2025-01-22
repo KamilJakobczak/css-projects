@@ -57,5 +57,49 @@ body #button_2:before {
 body #button_2:hover:before {
   transform: translateX(0);
 }
+body #button_2:hover {
+  color: white;
+}
+body #button_3 {
+  padding: 40px 80px;
+  color: brown;
+  font-size: 45px;
+  letter-spacing: 2px;
+  border: 5px solid brown;
+  transition: 1s;
+}
+body #button_3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+  z-index: -1;
+  transform: rotateX(90deg);
+  transition: 0.75s;
+}
+body #button_3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+  z-index: -1;
+  transform: rotateY(90deg);
+  transition: 0.75s;
+}
+body #button_3:hover:before {
+  transform: rotateX(0deg);
+}
+body #button_3:hover:after {
+  transform: rotateY(0deg);
+}
+body #button_3:hover {
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
