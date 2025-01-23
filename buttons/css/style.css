@@ -6,7 +6,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: rgb(174, 167, 167);
+  background-color: rgb(116, 116, 116);
 }
 body a {
   margin-top: 100px;
@@ -451,6 +451,61 @@ body #button_13:hover:after {
   left: 0;
   transform: perspective(1000px) rotateX(-75deg);
   transform-origin: bottom;
+}
+body #button_14 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 3px solid #f6b93b;
+  color: #f6b93b;
+}
+body #button_14:before, body #button_14:after,
+body #button_14 span:before,
+body #button_14 span:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #f6b93b;
+  z-index: -1;
+  transition: all 0.2s;
+}
+body #button_14:before {
+  top: 0;
+  left: -25%;
+}
+body #button_14:after {
+  top: -100%;
+  left: 25%;
+  transition-delay: 0.1s;
+}
+body #button_14 span:before {
+  top: 100%;
+  right: 25%;
+  transition-delay: 0.2s;
+}
+body #button_14 span:after {
+  top: 0;
+  right: -25%;
+  transition-delay: 0.3s;
+}
+body #button_14:hover {
+  color: #222;
+}
+body #button_14:hover span:before {
+  top: 0;
+  right: 25%;
+}
+body #button_14:hover span:after {
+  top: 0;
+  right: 0;
+}
+body #button_14:hover:before {
+  top: 0;
+  left: 0;
+}
+body #button_14:hover:after {
+  top: 0;
+  left: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
