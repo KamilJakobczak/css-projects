@@ -834,5 +834,51 @@ body #button_22:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
+body #button_23 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #250e74;
+  border: 5px solid #250e74;
+  transition: all 0.5s;
+}
+body #button_23:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 60px solid #250e74;
+  border-bottom: 60px solid #250e74;
+  border-right: 60px solid transparent;
+  z-index: -1;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+body #button_23:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 60px solid #250e74;
+  border-bottom: 60px solid #250e74;
+  border-left: 60px solid transparent;
+  z-index: -1;
+  transition: all 0.5s;
+  transform: translateX(100%);
+}
+body #button_23:hover {
+  color: #fafad2;
+}
+body #button_23:hover:before, body #button_23:hover:after {
+  transform: translateX(0%);
+}
 
 /*# sourceMappingURL=style.css.map */

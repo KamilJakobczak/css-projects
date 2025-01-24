@@ -875,6 +875,58 @@ body {
     }
   }
   #button_23 {
+    // padding: 0px;
+    // height: 80px;
+    // width: 250px;
+
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #250e74;
+    border: 5px solid #250e74;
+    transition: all 0.5s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 60px solid #250e74;
+      border-bottom: 60px solid #250e74;
+      border-right: 60px solid transparent;
+
+      z-index: -1;
+      transition: all 0.5s;
+      transform: translateX(-100%);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 60px solid #250e74;
+      border-bottom: 60px solid #250e74;
+      border-left: 60px solid transparent;
+
+      z-index: -1;
+      transition: all 0.5s;
+      transform: translateX(100%);
+    }
+    &:hover {
+      color: #fafad2;
+      &:before,
+      &:after {
+        transform: translateX(0%);
+      }
+    }
   }
   #button_24 {
   }
