@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  box-shadow: none;
 }
 
 body {
@@ -629,6 +630,101 @@ body #button_17:hover span:before {
   color: white;
   font-size: 80px;
   transform: translate(-65%, -10%) rotate(360deg);
+}
+body #button_18 {
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  letter-spacing: 10px;
+  transition: all 0.5s;
+}
+body #button_18:before, body #button_18:after,
+body #button_18 span:before,
+body #button_18 span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+body #button_18:before {
+  border-left: 5px solid white;
+  transform-origin: bottom left;
+}
+body #button_18:after {
+  border-right: 5px solid white;
+  transform-origin: top right;
+}
+body #button_18 span {
+  width: 100%;
+  height: 100%;
+}
+body #button_18 span:before {
+  border-top: 5px solid white;
+  transform-origin: top left;
+}
+body #button_18 span:after {
+  border-bottom: 5px solid white;
+  transform-origin: bottom right;
+}
+body #button_18:hover:before, body #button_18:hover:after,
+body #button_18:hover span:before,
+body #button_18:hover span:after {
+  transform: scale(1);
+}
+body #button_19 {
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  letter-spacing: 10px;
+  transition: all 0.5s;
+}
+body #button_19:before, body #button_19:after,
+body #button_19 span:before,
+body #button_19 span:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  transition: all 0.5s;
+}
+body #button_19:before {
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: -100%;
+}
+body #button_19:after {
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  right: -100%;
+}
+body #button_19 span:before {
+  width: 5px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+body #button_19 span:after {
+  width: 5px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+body #button_19:hover:before {
+  left: 0;
+}
+body #button_19:hover:after {
+  right: 0;
+}
+body #button_19:hover span:before {
+  top: 0;
+}
+body #button_19:hover span:after {
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
