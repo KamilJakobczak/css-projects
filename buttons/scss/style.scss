@@ -597,8 +597,53 @@ body {
     &:hover {
       &:before,
       &:after {
-        height: 110px;
-        width: 350px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  #button_17 {
+    padding: 0;
+    width: 160px;
+    height: 60px;
+    color: #222;
+    border: 2px solid #222;
+    line-height: 60px;
+    font-size: 24px;
+    transition: all 0.2s;
+    overflow: visible;
+    span {
+      position: relative;
+      color: transparent;
+      &:before {
+        content: 'B';
+        position: absolute;
+        color: #222;
+        transition: all 0.2s;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.8s;
+    }
+    &:hover {
+      color: white;
+      &:before {
+        opacity: 1;
+        transform: rotate(15deg);
+      }
+      span:before {
+        color: white;
+        font-size: 80px;
+        transform: translate(-65%, -10%) rotate(360deg);
       }
     }
   }
