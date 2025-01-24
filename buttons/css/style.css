@@ -553,5 +553,37 @@ body #button_15:hover:before {
 body #button_15:hover:after {
   transform: rotateX(180deg);
 }
+body #button_16 {
+  text-transform: uppercase;
+  background-color: #c96822;
+  color: white;
+  overflow: visible;
+}
+body #button_16:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid #c96822;
+  border-left: 5px solid #c96822;
+  transition: all 0.5s;
+}
+body #button_16:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid #c96822;
+  border-right: 5px solid #c96822;
+  transition: all 0.5s;
+}
+body #button_16:hover:before, body #button_16:hover:after {
+  height: 110px;
+  width: 350px;
+}
 
 /*# sourceMappingURL=style.css.map */
