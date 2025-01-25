@@ -138,5 +138,43 @@ body #c3:hover img {
 body #c3:hover .caption {
   left: 0;
 }
+body #c4 {
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+body #c4 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+body #c4 .caption {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.5s;
+}
+body #c4 .caption h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+body #c4 .caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+body #c4:hover img {
+  top: -25%;
+}
+body #c4:hover .caption {
+  top: 75%;
+}
 
 /*# sourceMappingURL=style.css.map */
