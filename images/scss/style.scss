@@ -16,17 +16,20 @@ body {
   flex-direction: column;
   background-color: #747474;
   font-family: 'roboto', sans-serif;
-
-  .container-1 {
+  .container {
+    position: relative;
     width: 500px;
     height: 500px;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 100px;
     cursor: pointer;
-    border: 1px solid #fff;
-
     img {
       width: 100%;
+    }
+  }
+  #c1 {
+    overflow: hidden;
+    border: 1px solid #fff;
+    img {
       transition: 0.5s;
     }
     .caption {
@@ -58,6 +61,84 @@ body {
       }
       .caption {
         opacity: 1;
+      }
+    }
+  }
+  #c2 {
+    overflow: hidden;
+    border: 1px solid #fff;
+    img {
+      transition: 0.5s;
+    }
+    .caption {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: 0.5s;
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.3) rotate(-15deg);
+      }
+      .caption {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+  #c3 {
+    overflow: hidden;
+    border: 1px solid #fff;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+    }
+    .caption {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: 0.5s;
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+    }
+    &:hover {
+      img {
+        left: 100%;
+      }
+      .caption {
+        left: 0;
       }
     }
   }
