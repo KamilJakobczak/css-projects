@@ -118,5 +118,45 @@ body #n2 ul li:hover a:after {
   right: -5px;
   opacity: 1;
 }
+body #n3 ul {
+  width: 80%;
+}
+body #n3 ul li a {
+  position: relative;
+  padding: 10px 35px;
+  color: black;
+  transition: 0.4s;
+}
+body #n3 ul li a span {
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: black;
+  width: 25%;
+  height: 0%;
+  transition: 0.4s;
+  z-index: -1;
+}
+body #n3 ul li a span:nth-child(1) {
+  left: 0;
+}
+body #n3 ul li a span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+body #n3 ul li a span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+body #n3 ul li a span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.3s;
+}
+body #n3 ul li a:hover {
+  color: white;
+}
+body #n3 ul li a:hover span {
+  height: 100%;
+}
 
 /*# sourceMappingURL=styles.css.map */

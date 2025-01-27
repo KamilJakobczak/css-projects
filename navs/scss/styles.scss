@@ -134,4 +134,48 @@ body {
       }
     }
   }
+  #n3 {
+    ul {
+      width: 80%;
+      li {
+        a {
+          position: relative;
+          padding: 10px 35px;
+          color: black;
+          transition: 0.4s;
+          span {
+            position: absolute;
+            top: 0;
+            display: block;
+            background-color: black;
+            width: 25%;
+            height: 0%;
+            transition: 0.4s;
+            z-index: -1;
+            &:nth-child(1) {
+              left: 0;
+            }
+            &:nth-child(2) {
+              left: 25%;
+              transition-delay: 0.1s;
+            }
+            &:nth-child(3) {
+              left: 50%;
+              transition-delay: 0.2s;
+            }
+            &:nth-child(4) {
+              left: 75%;
+              transition-delay: 0.3s;
+            }
+          }
+          &:hover {
+            color: white;
+            span {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
