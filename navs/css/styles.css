@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik, sans-serif";
+}
+body .container {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 50px;
+  border-bottom: 3px solid rgb(84, 61, 61);
+  border-top: 3px solid rgb(84, 61, 61);
+}
+body .container ul {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+body .container ul li a {
+  position: relative;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+body #n1 {
+  margin-top: 20px;
+  background-color: #fffa65;
+}
+body #n1 ul li {
+  overflow: hidden;
+}
+body #n1 ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transform: translateX(-105%);
+  transition: 0.5s;
+}
+body #n1 ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transform: translateX(105%);
+  transition: 0.5s;
+}
+body #n1 ul li:hover a:before {
+  transform: translateX(0);
+}
+body #n1 ul li:hover a:after {
+  transform: translateX(0);
+}
+
+/*# sourceMappingURL=styles.css.map */
