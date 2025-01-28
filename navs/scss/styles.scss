@@ -21,7 +21,7 @@ body {
     border-top: 3px solid rgb(84, 61, 61);
     ul {
       height: 100%;
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
@@ -617,6 +617,44 @@ body {
       &:hover {
         a {
           color: #0002;
+        }
+      }
+    }
+  }
+  #n12 {
+    height: 500px;
+    background-color: rgb(10, 10, 52);
+    ul {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      li {
+        a {
+          position: relative;
+          font-size: 30px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: transparent;
+
+          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+          &:before {
+            content: attr(data-text);
+            position: absolute;
+
+            color: aquamarine;
+            border-right: 5px solid aquamarine;
+            -webkit-text-stroke: 1px aquamarine;
+            width: 0;
+            overflow: hidden;
+
+            transition: 1s;
+          }
+          &:hover {
+            &:before {
+              width: 100%;
+            }
+          }
         }
       }
     }

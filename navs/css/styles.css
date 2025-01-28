@@ -23,7 +23,7 @@ body .container {
 }
 body .container ul {
   height: 100%;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -545,6 +545,37 @@ body #n11 ul li:nth-child(5) a:before {
 }
 body #n11 ul:hover a {
   color: rgba(0, 0, 0, 0.1333333333);
+}
+body #n12 {
+  height: 500px;
+  background-color: rgb(10, 10, 52);
+}
+body #n12 ul {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+body #n12 ul li a {
+  position: relative;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+body #n12 ul li a:before {
+  content: attr(data-text);
+  position: absolute;
+  color: aquamarine;
+  border-right: 5px solid aquamarine;
+  -webkit-text-stroke: 1px aquamarine;
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+body #n12 ul li a:hover:before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
