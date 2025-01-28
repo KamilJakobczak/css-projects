@@ -198,5 +198,47 @@ body #n4 ul li:hover a:after {
   width: 50%;
   transform: translateX(-100%);
 }
+body #n5 {
+  background-color: rgb(28, 98, 98);
+}
+body #n5 ul li {
+  margin: 0 15px;
+}
+body #n5 ul li a {
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+body #n5 ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #b4680b;
+  transform: scale(0);
+  transition: 0.3s;
+  z-index: -1;
+}
+body #n5 ul li a:hover {
+  transform: scale(1.5);
+  opacity: 1;
+  filter: blur(0);
+}
+body #n5 ul li a:hover:before {
+  transform: scale(1);
+}
+body #n5 ul:hover a {
+  filter: blur(5px);
+  opacity: 0.2;
+}
+body #n6 {
+  background-color: rgb(70, 70, 70);
+}
+body #n6 ul li a {
+  color: white;
+}
 
 /*# sourceMappingURL=styles.css.map */
