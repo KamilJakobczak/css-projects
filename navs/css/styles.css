@@ -483,5 +483,68 @@ body #n10 ul li a:hover:after {
   -webkit-text-stroke: 1px black;
   transform: translate(10px, -10px);
 }
+body #n11 {
+  height: 400px;
+}
+body #n11 ul {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+body #n11 ul li a {
+  display: inline-flex;
+  position: unset;
+  font-size: 25px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+body #n11 ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100dvw;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  letter-spacing: 500px;
+  opacity: 0;
+  transition: 0.5s;
+}
+body #n11 ul li a:hover {
+  color: black;
+  background-color: white;
+}
+body #n11 ul li a:hover:before {
+  content: attr(data-text);
+  letter-spacing: 15px;
+  opacity: 1;
+}
+body #n11 ul li:nth-child(1) a:before {
+  background-color: aquamarine;
+}
+body #n11 ul li:nth-child(2) a:before {
+  background-color: rgb(135, 71, 153);
+}
+body #n11 ul li:nth-child(3) a:before {
+  background-color: rgb(12, 95, 67);
+}
+body #n11 ul li:nth-child(4) a:before {
+  background-color: rgb(188, 214, 70);
+}
+body #n11 ul li:nth-child(5) a:before {
+  background-color: rgb(215, 75, 75);
+}
+body #n11 ul:hover a {
+  color: rgba(0, 0, 0, 0.1333333333);
+}
 
 /*# sourceMappingURL=styles.css.map */
