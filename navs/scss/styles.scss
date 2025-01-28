@@ -16,7 +16,7 @@ body {
   .container {
     height: 100px;
     width: 100%;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     border-bottom: 3px solid rgb(84, 61, 61);
     border-top: 3px solid rgb(84, 61, 61);
     ul {
@@ -172,6 +172,52 @@ body {
             color: white;
             span {
               height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #n4 {
+    ul {
+      width: 70%;
+      li {
+        padding: 10px 20px;
+        cursor: pointer;
+        a {
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 16px;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 120%;
+            left: 0;
+            height: 5px;
+            width: 0;
+            background-color: rgb(58, 83, 195);
+            transition: 0.5s;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            top: 120%;
+            right: 0;
+            height: 5px;
+            width: 0;
+            background-color: rgb(199, 51, 150);
+            transition: 0.5s;
+          }
+        }
+        &:hover {
+          a {
+            &:before {
+              width: 50%;
+              transform: translateX(100%);
+            }
+            &:after {
+              width: 50%;
+              transform: translateX(-100%);
             }
           }
         }

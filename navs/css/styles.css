@@ -17,7 +17,7 @@ body {
 body .container {
   height: 100px;
   width: 100%;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
   border-bottom: 3px solid rgb(84, 61, 61);
   border-top: 3px solid rgb(84, 61, 61);
 }
@@ -157,6 +157,46 @@ body #n3 ul li a:hover {
 }
 body #n3 ul li a:hover span {
   height: 100%;
+}
+body #n4 ul {
+  width: 70%;
+}
+body #n4 ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body #n4 ul li a {
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+body #n4 ul li a:before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background-color: rgb(58, 83, 195);
+  transition: 0.5s;
+}
+body #n4 ul li a:after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  right: 0;
+  height: 5px;
+  width: 0;
+  background-color: rgb(199, 51, 150);
+  transition: 0.5s;
+}
+body #n4 ul li:hover a:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+body #n4 ul li:hover a:after {
+  width: 50%;
+  transform: translateX(-100%);
 }
 
 /*# sourceMappingURL=styles.css.map */
