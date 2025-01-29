@@ -18,11 +18,15 @@ body {
 }
 body .container {
   min-height: 400px;
+  width: 500px;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+body .container:nth-child(4) {
+  background-color: #491f8f;
 }
 body .container #c1 {
   position: relative;
@@ -159,6 +163,73 @@ body .container #c3:hover img {
 body .container #c3:hover .content {
   left: 5%;
   opacity: 1;
+}
+body .container #c4 {
+  height: 330px;
+  width: 240px;
+  color: darkolivegreen;
+  position: relative;
+}
+body .container #c4 .face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container #c4 .face.face1 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  text-align: center;
+}
+body .container #c4 .face.face1 p {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+body .container #c4 .face.face1 a {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid darkolivegreen;
+  color: darkolivegreen;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+body .container #c4 .face.face1 a:hover {
+  background-color: darkolivegreen;
+  color: whitesmoke;
+}
+body .container #c4 .face.face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: darkolivegreen;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  color: whitesmoke;
+}
+body .container #c4 .face.face2 h2 {
+  font-size: 80px;
+}
+body .container #c4:hover {
+  background-color: white;
+}
+body .container #c4:hover .face.face2 {
+  top: 10%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid darkolivegreen;
+  color: darkolivegreen;
+  transition: 0.3s;
+}
+body .container #c4:hover .face.face2 h2 {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
