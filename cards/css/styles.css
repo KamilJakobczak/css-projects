@@ -31,6 +31,10 @@ body .container:nth-child(4) {
 body .container:nth-child(5) {
   background-color: rgb(77, 76, 76);
 }
+body .container:nth-child(9) {
+  min-height: 600px;
+  background-color: #111;
+}
 body .container #c1 {
   position: relative;
   width: 320px;
@@ -433,6 +437,243 @@ body .container #c7:hover .content p,
 body .container #c7:hover .content a {
   opacity: 1;
   transition-delay: 0.5s;
+}
+body .container #c8 {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #122936;
+  border-radius: 15px;
+  overflow: hidden;
+}
+body .container #c8 .imgbox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+body .container #c8 .imgbox img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+body .container #c8 .content {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+body .container #c8 .content h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body .container #c8 .content .price {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body .container #c8 .content .buy {
+  position: relative;
+  top: 200px;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  background: #2196f3;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+body .container #c8:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+body .container #c8:after {
+  content: "Phillips";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  font-size: 8em;
+  transition: 0.5s;
+}
+body .container #c8:hover .imgbox img {
+  max-width: 50%;
+}
+body .container #c8:hover .content .buy {
+  opacity: 1;
+  top: 0px;
+}
+body .container #c8:hover:before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+body .container #c9 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+}
+body .container #c9 .imgbox {
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: 0.5s;
+}
+body .container #c9 .imgbox img {
+  position: absolute;
+  width: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+}
+body .container #c9 .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 5;
+}
+body .container #c9 .content h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+}
+body .container #c9 .content .size,
+body .container #c9 .content .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+body .container #c9 .content .size h3,
+body .container #c9 .content .color h3 {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+body .container #c9 .content .size span {
+  width: 22px;
+  height: 22px;
+  line-height: 20px;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+body .container #c9 .content .size span:hover {
+  color: #122936;
+  background-color: greenyellow;
+}
+body .container #c9 .content .color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+body .container #c9 .content .color span:nth-child(2) {
+  background-color: greenyellow;
+}
+body .container #c9 .content .color span:nth-child(3) {
+  background-color: #2196f3;
+}
+body .container #c9 .content .color span:nth-child(4) {
+  background-color: #d41e31;
+}
+body .container #c9 .content a {
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #111;
+  margin-top: 10px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+body .container #c9:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+body .container #c9:after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 230px;
+  color: #3c3b3b;
+  font-weight: bold;
+  font-style: italic;
+  z-index: 1;
+}
+body .container #c9:hover .imgbox {
+  top: 0;
+  transform: translateY(0);
+}
+body .container #c9:hover .content {
+  height: 210px;
+}
+body .container #c9:hover .content .size {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+body .container #c9:hover .content .color {
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+body .container #c9:hover .content a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.75s;
+}
+body .container #c9:hover:before {
+  clip-path: circle(300px at 80% -20%);
 }
 
 /*# sourceMappingURL=styles.css.map */
