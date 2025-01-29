@@ -28,6 +28,9 @@ body .container {
 body .container:nth-child(4) {
   background-color: #491f8f;
 }
+body .container:nth-child(5) {
+  background-color: rgb(77, 76, 76);
+}
 body .container #c1 {
   position: relative;
   width: 320px;
@@ -230,6 +233,73 @@ body .container #c4:hover .face.face2 {
 }
 body .container #c4:hover .face.face2 h2 {
   font-size: 30px;
+}
+body .container #c5 {
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+body .container #c5 .face1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100px);
+  transition: 0.5s;
+  z-index: 1;
+}
+body .container #c5 .face1 .imgbox {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+body .container #c5 .face1 .imgbox img {
+  width: 100px;
+}
+body .container #c5 .face1 h3 {
+  margin: 15px 0 0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .container #c5 .face2 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+  transition: 0.5s;
+}
+body .container #c5 .face2 a {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #777;
+  padding: 5px;
+  border: 1px solid #777;
+  transition: 0.5s;
+}
+body .container #c5:hover .face1 {
+  background-color: deeppink;
+  transform: translateY(0);
+}
+body .container #c5:hover .face1 .imgbox {
+  opacity: 1;
+}
+body .container #c5:hover .face2 {
+  transform: translateY(0);
+}
+body .container #c5:hover .face2 a:hover {
+  background-color: #777;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
