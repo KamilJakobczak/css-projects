@@ -28,6 +28,9 @@ body .container {
 body .container:nth-child(1) {
   background-color: rgb(67, 66, 66);
 }
+body .container:nth-child(5) {
+  height: 600px;
+}
 body .container #m1 ul {
   list-style: none;
   display: flex;
@@ -189,6 +192,46 @@ body .container #m4 .rotated:after {
   border-left: 5px solid #58c747;
   border-right: 5px solid #58c747;
   transform: scaleY(0);
+}
+body .container #m5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+body .container #m5 h2 {
+  font-family: "Rubik";
+  position: relative;
+  font-size: 150px;
+  color: ghostwhite;
+  z-index: 1;
+  text-transform: uppercase;
+  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+  transition: 2s;
+}
+body .container #m5 h2:hover {
+  filter: blur(10px);
+  transform: scale(1.2);
+}
+body .container #m5 h2:hover ~ img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0);
+}
+body .container #m5 img {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  filter: blur(10px);
+  transition: 2s;
 }
 
 @keyframes m3 {
