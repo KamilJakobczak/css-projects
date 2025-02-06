@@ -283,6 +283,123 @@ body .container #m6 h2 span:hover {
 body .container #m6 h2 span:hover i:before, body .container #m6 h2 span:hover i:after {
   opacity: 1;
 }
+body .container #m7 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  background-color: rgb(153, 25, 93);
+}
+body .container #m7 .m7__container {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  z-index: 1;
+}
+body .container #m7 .m7__container .card {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(40deg) skew(-20deg, -10deg) scale(0.6);
+  box-shadow: 25px 20px 100px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  z-index: calc(-1 * var(--i));
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container #m7 .m7__container .card:nth-child(2) {
+  opacity: 0.8;
+}
+body .container #m7 .m7__container .card:nth-child(3) {
+  opacity: 0.6;
+}
+body .container #m7 .m7__container .card .content {
+  position: relative;
+  padding: 25px;
+  color: #444;
+  transition: 0.5s;
+  opacity: 0;
+}
+body .container #m7 .m7__container:hover .card {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(calc(-50% + 350px * var(--i)));
+}
+body .container #m7 .m7__container:hover .card .content {
+  opacity: 1;
+  transition-delay: calc(0.2s * var(--j));
+}
+body .container #m7:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffd000;
+  transition: 0.5s;
+  clip-path: circle(250px at center);
+}
+body .container #m8 {
+  width: 100%;
+}
+body .container #m8 section {
+  position: relative;
+  width: 100%;
+  min-height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+}
+body .container #m8 section .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+body .container #m8 section .content p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body .container #m8 section .content h2 {
+  font-size: 35dvw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1em;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+body .container #m8 section:nth-child(1) h2 {
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+}
+body .container #m8 section:nth-child(2) h2 {
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+}
+body .container #m8 section:nth-child(3) h2 {
+  background-image: url(../img/bg3.jpg);
+  background-size: cover;
+}
+body .container #m8 section:nth-child(4) h2 {
+  background-image: url(../img/bg4.jpg);
+  background-size: cover;
+}
 
 @keyframes m3 {
   0% {
