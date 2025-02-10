@@ -70,5 +70,36 @@ body .container #a2 .loading {
     transform: rotateX(180deg) rotateY(180deg);
   }
 }
+body .container #a3 {
+  height: 800px;
+}
+body .container #a3 .background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/a3/bg.jpg);
+  background-position: bottom left;
+  animation: driving 15s linear infinite;
+}
+body .container #a3 .background .car {
+  position: absolute;
+  left: 300px;
+  bottom: -50px;
+  width: 200px;
+}
+body .container #a3 .background .motobike {
+  position: absolute;
+  left: 700px;
+  bottom: 55px;
+  width: 150px;
+}
+@keyframes driving {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
