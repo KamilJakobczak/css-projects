@@ -15,4 +15,60 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  .container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    > div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #a1 {
+      background-color: rgb(118, 189, 118);
+      h1 {
+        text-align: center;
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 10px;
+        text-shadow: 0 1px 0 white, 0 2px 0 white, 0 3px 0 white, 0 4px 0 white, 0 30px 5px rgba(0, 0, 0, 0.1);
+        color: white;
+        animation: float 3s linear infinite alternate;
+      }
+      @keyframes float {
+        from {
+          rotate: 5deg;
+        }
+        to {
+          rotate: -5deg;
+        }
+      }
+    }
+    #a2 {
+      background-color: rgb(122, 218, 122);
+      perspective: 200px;
+      .loading {
+        width: 100px;
+        height: 100px;
+        background-color: whitesmoke;
+        border-radius: 12px;
+        animation: loading 3s linear infinite;
+      }
+      @keyframes loading {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        50% {
+          transform: rotateX(0deg) rotateY(180deg);
+        }
+
+        100% {
+          transform: rotateX(180deg) rotateY(180deg);
+        }
+      }
+    }
+  }
 }
