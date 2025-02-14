@@ -545,5 +545,51 @@ body .container #a13 a:hover .wave {
     background-position-x: 118px;
   }
 }
+body .container #a14 {
+  height: 250px;
+  background-color: #484848;
+}
+body .container #a14 .pulse {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #11c939;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container #a14 .pulse i {
+  font-size: 40px;
+  color: white;
+}
+body .container #a14 .pulse:before, body .container #a14 .pulse:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 1px solid #11c939;
+  border-radius: 50%;
+  animation: pulse 1.5s linear infinite;
+}
+body .container #a14 .pulse:after {
+  animation-delay: 0.5s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
