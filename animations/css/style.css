@@ -358,7 +358,7 @@ body .container #a10 .rain {
   width: 100%;
   height: 100%;
   background: url(../img/a10/rain.png);
-  animation: raining 0.3s linear infinite;
+  animation: raining 0.25s linear infinite;
 }
 @keyframes raining {
   0% {
@@ -366,6 +366,77 @@ body .container #a10 .rain {
   }
   100% {
     background-position: 20% 100%;
+  }
+}
+body .container #a11 {
+  height: 400px;
+}
+body .container #a11 ul {
+  display: flex;
+}
+body .container #a11 ul li {
+  width: 120px;
+  height: 120px;
+  list-style: none;
+  margin: 0 20px;
+  border: 2px solid rgb(38, 56, 110);
+  border-radius: 50%;
+  transition: 0.5s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body .container #a11 ul li:hover:before {
+  opacity: 1;
+  transform: scale(0.8);
+}
+body .container #a11 ul li:hover:after {
+  opacity: 1;
+  animation: rotating 10s linear infinite;
+}
+body .container #a11 ul li:hover i {
+  color: white;
+}
+body .container #a11 ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(38, 56, 110);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+}
+body .container #a11 ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  border: 2px dashed rgb(38, 56, 110);
+}
+body .container #a11 ul li i {
+  font-size: 50px;
+  color: rgb(38, 56, 110);
+  transition: 0.5s;
+}
+@keyframes rotating {
+  0% {
+    transform: scale(0.92) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.92) rotate(360deg);
   }
 }
 
