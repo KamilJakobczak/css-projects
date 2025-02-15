@@ -591,5 +591,67 @@ body .container #a14 .pulse:after {
     opacity: 0;
   }
 }
+body .container #a15 {
+  height: 600px;
+  background-color: rgb(38, 56, 110);
+}
+body .container #a15 .cradle {
+  display: flex;
+  border-top: 10px solid aliceblue;
+}
+body .container #a15 .cradle span {
+  display: block;
+  position: relative;
+  width: 3px;
+  height: 300px;
+  margin: 0 24px;
+  background-color: aliceblue;
+  transform-origin: top;
+}
+body .container #a15 .cradle span:first-child {
+  animation: leftArm 2s ease-in infinite;
+}
+body .container #a15 .cradle span:last-child {
+  animation: rightArm 2s ease-in infinite;
+  animation-delay: 1s;
+}
+body .container #a15 .cradle span:before {
+  content: "";
+  position: absolute;
+  bottom: calc(0% - 50px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+@keyframes leftArm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rightArm {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-60deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
