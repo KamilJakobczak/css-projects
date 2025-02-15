@@ -859,5 +859,33 @@ body .container #a19 .wrapper .ring {
     transform: rotate(360deg);
   }
 }
+body .container #a20 {
+  height: 200px;
+  background-color: #222;
+}
+body .container #a20 .loading {
+  width: 250px;
+  height: 3px;
+  background-color: aliceblue;
+  animation: loading 2s linear infinite alternate;
+}
+@keyframes loading {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  45% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
