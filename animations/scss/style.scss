@@ -906,5 +906,59 @@ body {
 				}
 			}
 		}
+		#a21 {
+			background-color: #222;
+			.loading {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 250px;
+				width: 500px;
+				.obj {
+					width: 6px;
+					height: 40px;
+					background-color: ghostwhite;
+					margin: 0 4px;
+					border-radius: 10px;
+					animation: loading 1s linear infinite;
+					transform-origin: bottom;
+					&:nth-child(1) {
+						animation-delay: 0s;
+					}
+					&:nth-child(2) {
+						animation-delay: 0.1s;
+					}
+					&:nth-child(3) {
+						animation-delay: 0.2s;
+					}
+					&:nth-child(4) {
+						animation-delay: 0.3s;
+					}
+					&:nth-child(5) {
+						animation-delay: 0.4s;
+					}
+					&:nth-child(6) {
+						animation-delay: 0.5s;
+					}
+					&:nth-child(7) {
+						animation-delay: 0.6s;
+					}
+					&:nth-child(8) {
+						animation-delay: 0.7s;
+					}
+				}
+			}
+			@keyframes loading {
+				0% {
+					transform: scaleY(0);
+				}
+				50% {
+					transform: scaleY(1);
+				}
+				100% {
+					transform: scaleY(0);
+				}
+			}
+		}
 	}
 }
