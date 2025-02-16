@@ -1270,5 +1270,59 @@ body .container #a26 .line .hexagon:after {
     transform: rotate(30deg);
   }
 }
+body .container #a27 {
+  height: 200px;
+}
+body .container #a27 ul {
+  display: flex;
+}
+body .container #a27 ul li {
+  list-style: none;
+}
+body .container #a27 ul li a {
+  position: relative;
+  display: block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 30px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: 0.5s;
+  overflow: hidden;
+}
+body .container #a27 ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -100%;
+  background-color: red;
+  transition: 0.5s;
+}
+body .container #a27 ul li a:hover {
+  color: white;
+}
+body .container #a27 ul li a:hover:before {
+  animation: a27 0.5s linear forwards;
+}
+@keyframes a27 {
+  0% {
+    left: -100%;
+    height: 4px;
+  }
+  50% {
+    left: 0;
+    height: 4px;
+  }
+  100% {
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
