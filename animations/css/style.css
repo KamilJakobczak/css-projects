@@ -39,9 +39,9 @@ body .container #a1 h1 {
   letter-spacing: 10px;
   text-shadow: 0 1px 0 white, 0 2px 0 white, 0 3px 0 white, 0 4px 0 white, 0 30px 5px rgba(0, 0, 0, 0.1);
   color: white;
-  animation: float 3s linear infinite alternate;
+  animation: a1 3s linear infinite alternate;
 }
-@keyframes float {
+@keyframes a1 {
   from {
     rotate: 5deg;
   }
@@ -59,9 +59,9 @@ body .container #a2 .loading {
   height: 100px;
   background-color: whitesmoke;
   border-radius: 12px;
-  animation: loading 3s linear infinite;
+  animation: a2 3s linear infinite;
 }
-@keyframes loading {
+@keyframes a2 {
   0% {
     transform: rotateX(0deg) rotateY(0deg);
   }
@@ -449,7 +449,7 @@ body .container #a12 ul {
 body .container #a12 ul li {
   font-size: 80px;
   letter-spacing: 20px;
-  animation: loading 4s linear infinite alternate;
+  animation: a12 4s linear infinite alternate;
 }
 body .container #a12 ul li:nth-child(1) {
   animation-delay: 0s;
@@ -472,7 +472,7 @@ body .container #a12 ul li:nth-child(6) {
 body .container #a12 ul li:nth-child(7) {
   animation-delay: 1.2s;
 }
-@keyframes loading {
+@keyframes a12 {
   0% {
     color: red;
     transform: translateX(-50px);
@@ -668,7 +668,7 @@ body .container #a16 .wrapper span {
   position: absolute;
   width: 50px;
   height: 50px;
-  animation: rotate 1s linear infinite;
+  animation: a16 1s linear infinite;
 }
 body .container #a16 .wrapper span:nth-child(1) {
   top: 0;
@@ -690,7 +690,7 @@ body .container #a16 .wrapper span:nth-child(4) {
   right: 0;
   background-color: #ff00ff;
 }
-@keyframes rotate {
+@keyframes a16 {
   0% {
     transform: rotate(0deg);
   }
@@ -867,9 +867,9 @@ body .container #a20 .loading {
   width: 250px;
   height: 3px;
   background-color: aliceblue;
-  animation: loading 2s linear infinite alternate;
+  animation: a20 2s linear infinite alternate;
 }
-@keyframes loading {
+@keyframes a20 {
   0% {
     transform: scaleX(0);
     transform-origin: left;
@@ -903,7 +903,7 @@ body .container #a21 .loading .obj {
   background-color: ghostwhite;
   margin: 0 4px;
   border-radius: 10px;
-  animation: loading 1s linear infinite;
+  animation: a21 1s linear infinite;
   transform-origin: bottom;
 }
 body .container #a21 .loading .obj:nth-child(1) {
@@ -930,7 +930,7 @@ body .container #a21 .loading .obj:nth-child(7) {
 body .container #a21 .loading .obj:nth-child(8) {
   animation-delay: 0.7s;
 }
-@keyframes loading {
+@keyframes a21 {
   0% {
     transform: scaleY(0);
   }
@@ -1005,6 +1005,49 @@ body .container #a22 .loader .dot {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+body .container #a23 {
+  background-color: #00aeff;
+  height: 300px;
+}
+body .container #a23 .loader {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body .container #a23 .loader span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+body .container #a23 .loader span.s4:before, body .container #a23 .loader span.s5:before, body .container #a23 .loader span.s6:before {
+  animation-delay: 0.1s;
+}
+body .container #a23 .loader span.s7:before, body .container #a23 .loader span.s8:before, body .container #a23 .loader span.s9:before {
+  animation-delay: 0.2s;
+}
+body .container #a23 .loader span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  animation: a23 1s linear infinite;
+}
+@keyframes a23 {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
   }
 }
 
