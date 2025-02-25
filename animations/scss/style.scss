@@ -1566,5 +1566,50 @@ body {
 				}
 			}
 		}
+		#a31 {
+			height: 500px;
+			background-color: rgba(2, 0, 36, 1);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.loader {
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background: linear-gradient(
+					0deg,
+					rgba(2, 0, 36, 1) 40%,
+					rgba(81, 238, 238, 1) 100%
+				);
+				animation: a31 2s linear infinite;
+				&:before {
+					content: '';
+					position: absolute;
+					inset: 20px 20px 0 0;
+					background: rgba(2, 0, 36, 1);
+					border-radius: 50%;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					width: 40px;
+					height: 40px;
+					background-color: rgba(81, 238, 238, 1);
+					border-radius: 50%;
+					top: 50px;
+					right: -8px;
+					box-shadow: 0 0 5px rgba(81, 238, 238, 1),
+						0 0 25px rgba(81, 238, 238, 1),
+						0 0 50px rgba(81, 238, 238, 1),
+						0 0 75px rgba(81, 238, 238, 1);
+				}
+			}
+			@keyframes a31 {
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		}
 	}
 }
