@@ -22,7 +22,6 @@ body .container {
   margin-bottom: 50px;
 }
 body .container > div {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1688,6 +1687,103 @@ body .container #a32 a:hover span:nth-child(4) {
   100% {
     top: calc(100% - 22px);
     left: 100%;
+  }
+}
+body .container #a33 {
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container #a33 .container {
+  height: 100%;
+  width: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #021886;
+}
+body .container #a33 .container:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  top: 640px;
+  animation: a33_circle 4s ease-in-out infinite;
+}
+body .container #a33 .container:after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background-color: #ee5253;
+  border-radius: 50%;
+  transform: translateY(80%);
+  top: 200px;
+}
+body .container #a33 .container .loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  animation: a33_half 4s ease-in-out infinite;
+  top: 40px;
+}
+body .container #a33 .container .loader:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #2acee7;
+  bottom: 0;
+}
+body .container #a33 .container .loader .ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-120px) translateY(-20px);
+  animation: a33_ball 4s ease-in-out infinite;
+}
+@keyframes a33_circle {
+  0% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+@keyframes a33_half {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+@keyframes a33_ball {
+  0% {
+    transform: translateX(-120px) translateY(-20px);
+  }
+  40% {
+    transform: translateX(120px) translateY(-20px);
+  }
+  100% {
+    transform: translateX(-120px) translateY(-20px);
   }
 }
 
