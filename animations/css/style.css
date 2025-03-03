@@ -2101,5 +2101,53 @@ body .container #a38 a span:nth-child(4) {
     bottom: 100%;
   }
 }
+body .container #a39 {
+  height: 800px;
+  background: rgb(7, 8, 72);
+}
+body .container #a39 .loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+body .container #a39 .loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+body .container #a39 .loader span:nth-child(1) {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+body .container #a39 .loader span:nth-child(2) {
+  background: orangered;
+  border-radius: 0;
+  animation: a39 5s ease-in-out infinite;
+}
+body .container #a39 .loader span:nth-child(3) {
+  background: palegreen;
+  animation: a39 5s ease-in-out infinite;
+  animation-delay: -2.5s;
+}
+@keyframes a39 {
+  0% {
+    transform: translate(-150px, 50px) scale(0.4) rotate(0deg);
+    z-index: 1;
+  }
+  50% {
+    transform: translate(150px, -50px) scale(0.4) rotate(180deg);
+    z-index: 1;
+  }
+  50.0001% {
+    transform: translate(150px, -50px) scale(0.4) rotate(180deg);
+    z-index: 3;
+  }
+  100% {
+    transform: translate(-150px, 50px) scale(0.4) rotate(360deg);
+    z-index: 3;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
