@@ -17,7 +17,7 @@ body {
 	font-family: 'Rubik', sans-serif;
 	> div {
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -143,6 +143,75 @@ body {
 							100% 100%,
 							0% 100%
 						);
+					}
+				}
+			}
+			&-3 {
+				width: 100%;
+				height: 1000px;
+				background-color: #444;
+				.wrapper {
+					position: relative;
+					width: 800px;
+					height: 500px;
+					.clip {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transition: 0.5s;
+						&.clip1 {
+							background: url(../img/cp3/1.jpg);
+							background-size: cover;
+							background-position: center;
+							clip-path: polygon(
+								0 0,
+								17% 0,
+								49% 100%,
+								0% 100%
+							);
+						}
+						&.clip2 {
+							background: url(../img/cp3/2.jpg);
+							background-size: cover;
+							background-position: center;
+							clip-path: polygon(
+								13% 0,
+								81% 0,
+								59% 100%,
+								36% 100%
+							);
+						}
+						&.clip3 {
+							background: url(../img/cp3/3.jpg);
+							background-size: cover;
+							background-position: center;
+							clip-path: polygon(
+								79% 0,
+								100% 0,
+								100% 100%,
+								59% 100%
+							);
+						}
+					}
+					&:hover {
+						.clip {
+							clip-path: polygon(
+								100% 0,
+								100% 0,
+								100% 100%,
+								100% 100%
+							);
+							&:hover {
+								clip-path: polygon(
+									0 0,
+									100% 0,
+									100% 100%,
+									0 100%
+								);
+							}
+						}
 					}
 				}
 			}
