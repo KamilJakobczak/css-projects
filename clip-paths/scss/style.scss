@@ -14,16 +14,18 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	> div {
+		width: 100%;
 		margin-bottom: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
 		&.container {
 			&-1 {
 				height: 300px;
 				width: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				.loader {
 					width: 300px;
 					height: 60px;
@@ -77,6 +79,70 @@ body {
 					}
 					100% {
 						transform: translateX(-100%);
+					}
+				}
+			}
+			&-2 {
+				background: #3f3f3f;
+				.wave {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 500px;
+					width: 500px;
+					position: relative;
+					h2 {
+						position: absolute;
+						text-align: center;
+						line-height: 500px;
+						font-size: 170px;
+						text-transform: uppercase;
+						&:nth-child(1) {
+							color: transparent;
+							-webkit-text-stroke: 2px #03a9f4;
+						}
+						&:nth-child(2) {
+							color: #03a9f4;
+							animation: cp2 2s ease-in-out infinite;
+						}
+					}
+				}
+				@keyframes cp2 {
+					0% {
+						clip-path: polygon(
+							0% 38%,
+							21% 40%,
+							38% 51%,
+							54% 57%,
+							75% 57%,
+							100% 52%,
+							100% 100%,
+							0% 100%
+						);
+					}
+					50% {
+						clip-path: polygon(
+							0 49%,
+							16% 56%,
+							33% 55%,
+							55% 50%,
+							75% 42%,
+							100% 40%,
+							100% 100%,
+							0% 100%
+						);
+					}
+					100% {
+						clip-path: polygon(
+							0% 38%,
+							21% 40%,
+							38% 51%,
+							54% 57%,
+							75% 57%,
+							100% 52%,
+							100% 100%,
+							0% 100%
+						);
 					}
 				}
 			}
