@@ -237,6 +237,54 @@ body {
 					}
 				}
 			}
+			&-5 {
+				height: 1000px;
+				background: #79c5e9;
+				.wrapper {
+					position: relative;
+					width: 800px;
+					h1 {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 100%;
+						text-transform: uppercase;
+						font-size: 200px;
+						text-align: center;
+
+						&:nth-child(1) {
+							&:hover ~ h1 {
+								clip-path: polygon(
+									0 0,
+									100% 0,
+									100% 0,
+									0 0
+								);
+							}
+						}
+						&:nth-child(2) {
+							color: white;
+							transition: 0.6s;
+							clip-path: polygon(
+								0 0,
+								100% 0,
+								100% 0,
+								0 100%
+							);
+							background-color: #79c5e9;
+							&:hover {
+								clip-path: polygon(
+									0 0,
+									100% 0,
+									100% 100%,
+									0 100%
+								);
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
