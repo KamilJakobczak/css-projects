@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+body {
+  min-height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+body .container {
+  min-height: 400px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container .js-1 {
+  background: #222;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .js-1 h2 {
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  cursor: default;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+body .container .js-1 h2 span {
+  color: #666;
+  transition: 0.25s;
+}
+body .container .js-1 h2:hover span {
+  color: greenyellow;
+  text-shadow: 0 0 5px greenyellow, 0 0 15px greenyellow, 0 0 25px greenyellow;
+}
+
+/*# sourceMappingURL=style.css.map */
