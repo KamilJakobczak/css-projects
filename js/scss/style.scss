@@ -52,6 +52,88 @@ body {
 					}
 				}
 			}
+			&-2 {
+				a {
+					font-size: 30px;
+					text-decoration: none;
+					text-transform: uppercase;
+					color: #222;
+					font-weight: 500;
+					transition: 0.5s;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	.header-js2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px 100px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 100;
+		h2.logo {
+			font-size: 2em;
+			color: #539381;
+			margin-right: 270px;
+		}
+		nav.navigation {
+			a {
+				text-decoration: none;
+				color: #539381;
+				padding: 6px 15px;
+				border-radius: 20px;
+				margin: 0 10px;
+				font-weight: 600;
+				transition: 0.5s;
+				&:hover {
+					background-color: #539381;
+					color: aliceblue;
+				}
+			}
+		}
+	}
+	.parallax {
+		width: 100%;
+		height: 100dvh;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			pointer-events: none;
+		}
+		#text-js2 {
+			position: absolute;
+			font-size: 5em;
+			color: white;
+			text-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+		}
+	}
+	.content-js2 {
+		position: relative;
+		background-color: #003329;
+		padding: 100px;
+		h2 {
+			font-size: 3em;
+			color: white;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 1em;
+			color: white;
+			font-weight: 300;
 		}
 	}
 }
