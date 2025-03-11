@@ -1,6 +1,6 @@
-const text = document.querySelector('.text-1');
+const textJS1 = document.querySelector('.text-1');
 
-let spans = text.innerText
+let spansJS1 = textJS1.innerText
 	.split('')
 	.map((letter, i) => {
 		return `<span style="transition-delay:${
@@ -11,4 +11,4 @@ let spans = text.innerText
 	})
 	.join('');
 
-text.innerHTML = spans;
+textJS1.innerHTML = spansJS1;
