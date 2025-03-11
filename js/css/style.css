@@ -258,6 +258,17 @@ body .container .js-5 section .circle2-js5 h2 {
   color: transparent;
   -webkit-text-stroke: 5px #444;
 }
+body .container .js-6 a {
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 500;
+  transition: 0.5s;
+}
+body .container .js-6 a:hover {
+  text-decoration: underline;
+}
 body .header-js2 {
   position: absolute;
   top: 0;
@@ -323,6 +334,89 @@ body .content-js2 p {
   font-size: 1em;
   color: white;
   font-weight: 300;
+}
+body .wrapper-js6 {
+  width: 100%;
+  min-height: 100dvh;
+}
+body .wrapper-js6 section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: #1f242d;
+  overflow: hidden;
+}
+body .wrapper-js6 section.sec2 {
+  background-color: rebeccapurple;
+}
+body .wrapper-js6 section.sec2 p {
+  color: #0f0;
+}
+body .wrapper-js6 section.sec2 .animate {
+  transform: translateX(100%);
+}
+body .wrapper-js6 section.sec2.show-animate .animate {
+  transform: translateX(0);
+}
+body .wrapper-js6 section.sec3 {
+  background-color: #539381;
+}
+body .wrapper-js6 section.sec3 p {
+  color: #ff0;
+}
+body .wrapper-js6 section.sec3 .animate {
+  transform: scale(0.7);
+}
+body .wrapper-js6 section.sec3.show-animate .animate {
+  transform: scale(1);
+}
+body .wrapper-js6 section.sec4 {
+  background-color: darkorange;
+}
+body .wrapper-js6 section.sec4 p {
+  color: #539381;
+}
+body .wrapper-js6 section.sec4 .animate {
+  transform: rotate(30deg);
+}
+body .wrapper-js6 section.sec4.show-animate .animate {
+  transform: rotate(0deg);
+}
+body .wrapper-js6 section.sec5 {
+  background-color: hotpink;
+}
+body .wrapper-js6 section.sec5 .images {
+  display: flex;
+  gap: 40px;
+}
+body .wrapper-js6 section.sec5 .images img {
+  max-width: 350px;
+}
+body .wrapper-js6 section.sec5 .animate {
+  transform: translateX(100%) rotate(-90deg);
+}
+body .wrapper-js6 section.sec5.show-animate .animate {
+  transform: translateX(0) rotate(0deg);
+}
+body .wrapper-js6 section h1 {
+  font-size: 90px;
+  color: whitesmoke;
+}
+body .wrapper-js6 section p {
+  font-size: 35px;
+  color: turquoise;
+  font-weight: 600;
+}
+body .wrapper-js6 section .animate {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+body .wrapper-js6 section.show-animate .animate {
+  opacity: 1;
+  filter: blur(0px);
 }
 
 /*# sourceMappingURL=style.css.map */
