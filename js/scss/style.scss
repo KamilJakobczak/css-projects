@@ -226,6 +226,50 @@ body {
 					}
 				}
 			}
+			&-5 {
+				width: 100%;
+				height: 1000px;
+				background-color: #444;
+				section {
+					position: relative;
+					top: 0;
+					left: 0;
+					width: 100%;
+					background-color: #444;
+					height: 1000px;
+					h2 {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 100%;
+						text-align: center;
+						color: white;
+						font-size: 18em;
+					}
+					.circle1-js5 {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background: #539381;
+						clip-path: circle(150px at 0 0);
+						h2 {
+							color: transparent;
+							-webkit-text-stroke: 5px #444;
+						}
+					}
+					.circle2-js5 {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background: rgb(255, 225, 0);
+						clip-path: circle(150px at 100% 100%);
+						h2 {
+							color: transparent;
+							-webkit-text-stroke: 5px #444;
+						}
+					}
+				}
+			}
 		}
 	}
 
