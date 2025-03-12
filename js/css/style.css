@@ -49,7 +49,7 @@ body .container .js-1 h2:hover span {
   color: greenyellow;
   text-shadow: 0 0 5px greenyellow, 0 0 15px greenyellow, 0 0 25px greenyellow;
 }
-body .container .js-2 a, body .container .js-6 a, body .container .js-7 a, body .container .js-8 a {
+body .container .js-2 a, body .container .js-6 a, body .container .js-7 a, body .container .js-8 a, body .container .js-9 a {
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ body .container .js-2 a, body .container .js-6 a, body .container .js-7 a, body 
   font-weight: 500;
   transition: 0.5s;
 }
-body .container .js-2 a:hover, body .container .js-6 a:hover, body .container .js-7 a:hover, body .container .js-8 a:hover {
+body .container .js-2 a:hover, body .container .js-6 a:hover, body .container .js-7 a:hover, body .container .js-8 a:hover, body .container .js-9 a:hover {
   text-decoration: underline;
 }
 body .container .js-3 {
@@ -510,6 +510,95 @@ body .wrapper-js8 section i {
   }
   100% {
     opacity: 0;
+  }
+}
+body .wrapper-js9 {
+  min-height: 100dvh;
+  width: 100%;
+}
+body .wrapper-js9 section {
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  background: linear-gradient(#a6d8ff, white, white);
+}
+body .wrapper-js9 section .sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  top: 100px;
+  left: 55%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 50px white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+body .wrapper-js9 section .bg {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  bottom: 0;
+  background: url(../img/js-9/bg.png) repeat-x;
+  background-size: 1500px;
+  animation: js9-bg 25s linear infinite;
+}
+body .wrapper-js9 section .bg .car1 {
+  position: absolute;
+  bottom: 20px;
+  max-width: 200px;
+  z-index: 1;
+  left: -200px;
+  animation: js9-car1 18s linear infinite;
+}
+body .wrapper-js9 section .bg .car2 {
+  position: absolute;
+  bottom: 50px;
+  max-width: 200px;
+  right: -200px;
+  animation: js9-car2 12s linear infinite;
+}
+body .wrapper-js9 section.night {
+  background: #192a56;
+}
+body .wrapper-js9 section.night .sun {
+  left: 45%;
+  box-shadow: 0 0 0 white;
+  transition: 0.1s;
+}
+body .wrapper-js9 section.night .sun:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #192a56;
+}
+@keyframes js9-bg {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1500px;
+  }
+}
+@keyframes js9-car1 {
+  0% {
+    transform: translateX(0px);
+  }
+  90%, 100% {
+    transform: translateX(calc(100dvw + 200px));
+  }
+}
+@keyframes js9-car2 {
+  0% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+  90%, 100% {
+    transform: translateX(calc(-100dvw - 200px)) rotateY(180deg);
   }
 }
 
