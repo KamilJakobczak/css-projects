@@ -7,8 +7,10 @@ window.onscroll = () => {
 	sectionsJS6.forEach(section => {
 		const scrollDist = window.scrollY;
 		const sectionDist = section.offsetTop;
-		if (scrollDist >= sectionDist) {
+		if (scrollDist >= sectionDist - 150) {
 			section.classList.add('show-animate');
+		} else {
+			section.classList.remove('show-animate');
 		}
 	});
 };

@@ -394,6 +394,12 @@ body .wrapper-js6 section.sec5 .images {
 body .wrapper-js6 section.sec5 .images img {
   max-width: 350px;
 }
+body .wrapper-js6 section.sec5 .images img:nth-child(2) {
+  transition-delay: 0.2s;
+}
+body .wrapper-js6 section.sec5 .images img:nth-child(3) {
+  transition-delay: 0.4s;
+}
 body .wrapper-js6 section.sec5 .animate {
   transform: translateX(100%) rotate(-90deg);
 }
@@ -408,6 +414,9 @@ body .wrapper-js6 section p {
   font-size: 35px;
   color: turquoise;
   font-weight: 600;
+}
+body .wrapper-js6 section p.animate {
+  transition-delay: 0.3s;
 }
 body .wrapper-js6 section .animate {
   opacity: 0;
