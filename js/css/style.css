@@ -49,7 +49,7 @@ body .container .js-1 h2:hover span {
   color: greenyellow;
   text-shadow: 0 0 5px greenyellow, 0 0 15px greenyellow, 0 0 25px greenyellow;
 }
-body .container .js-2 a {
+body .container .js-2 a, body .container .js-6 a, body .container .js-7 a {
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ body .container .js-2 a {
   font-weight: 500;
   transition: 0.5s;
 }
-body .container .js-2 a:hover {
+body .container .js-2 a:hover, body .container .js-6 a:hover, body .container .js-7 a:hover {
   text-decoration: underline;
 }
 body .container .js-3 {
@@ -258,17 +258,6 @@ body .container .js-5 section .circle2-js5 h2 {
   color: transparent;
   -webkit-text-stroke: 5px #444;
 }
-body .container .js-6 a {
-  font-size: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #222;
-  font-weight: 500;
-  transition: 0.5s;
-}
-body .container .js-6 a:hover {
-  text-decoration: underline;
-}
 body .header-js2 {
   position: absolute;
   top: 0;
@@ -426,6 +415,36 @@ body .wrapper-js6 section .animate {
 body .wrapper-js6 section.show-animate .animate {
   opacity: 1;
   filter: blur(0px);
+}
+body .wrapper-js7 {
+  width: 100%;
+  min-height: 100dvh;
+}
+body .wrapper-js7 .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/js-7/bg.png) repeat;
+  background-size: 700px;
+}
+body .wrapper-js7 .content {
+  position: relative;
+  width: 1000px;
+  margin: 100px auto;
+  z-index: 1;
+  background-color: white;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+body .wrapper-js7 .content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+body .wrapper-js7 .content p {
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
 
 /*# sourceMappingURL=style.css.map */
