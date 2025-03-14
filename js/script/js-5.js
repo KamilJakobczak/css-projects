@@ -7,7 +7,6 @@ const circle2JS5 = document.querySelector(
 
 window.addEventListener('scroll', () => {
 	const value = window.scrollY;
-	console.log(value);
 	circle1JS5.style.clipPath = `circle(${
 		150 * value * 0.0016
 	}px at 0 0)`;
