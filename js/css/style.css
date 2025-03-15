@@ -49,7 +49,7 @@ body .container .js-1 h2:hover span {
   color: greenyellow;
   text-shadow: 0 0 5px greenyellow, 0 0 15px greenyellow, 0 0 25px greenyellow;
 }
-body .container .js-2 a, body .container .js-6 a, body .container .js-7 a, body .container .js-8 a, body .container .js-9 a {
+body .container .js-2 a, body .container .js-6 a, body .container .js-7 a, body .container .js-8 a, body .container .js-9 a, body .container .js-14 a {
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,7 +57,7 @@ body .container .js-2 a, body .container .js-6 a, body .container .js-7 a, body 
   font-weight: 500;
   transition: 0.5s;
 }
-body .container .js-2 a:hover, body .container .js-6 a:hover, body .container .js-7 a:hover, body .container .js-8 a:hover, body .container .js-9 a:hover {
+body .container .js-2 a:hover, body .container .js-6 a:hover, body .container .js-7 a:hover, body .container .js-8 a:hover, body .container .js-9 a:hover, body .container .js-14 a:hover {
   text-decoration: underline;
 }
 body .container .js-3 {
@@ -823,6 +823,48 @@ body .wrapper-js9 section.night .sun:before {
   90%, 100% {
     transform: translateX(calc(-100dvw - 200px)) rotateY(180deg);
   }
+}
+body .wrapper-js14 {
+  width: 100%;
+  min-height: 200dvh;
+}
+body .wrapper-js14 section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 100;
+  pointer-events: none;
+}
+body .wrapper-js14 section .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/js-13/bg.jpg);
+  background-size: cover;
+}
+body .wrapper-js14 section .side.side1 {
+  clip-path: polygon(0% 0%, 68% 0%, 33% 15%, 68% 24%, 35% 36%, 68% 44%, 35% 54%, 68% 64%, 36% 74%, 68% 85%, 36% 89%, 69% 100%, 0 100%);
+}
+body .wrapper-js14 section .side.side2 {
+  clip-path: polygon(100% 0, 68% 0%, 33% 15%, 68% 24%, 35% 36%, 68% 44%, 35% 54%, 68% 64%, 36% 74%, 68% 85%, 36% 89%, 69% 100%, 100% 100%);
+}
+body .wrapper-js14 .content {
+  background: black;
+  color: white;
+  padding: 100px;
+  padding-top: 120dvh;
+}
+body .wrapper-js14 .content h2 {
+  position: relative;
+  font-size: 4em;
+}
+body .wrapper-js14 .content p {
+  position: relative;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
