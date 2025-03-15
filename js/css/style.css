@@ -466,6 +466,21 @@ body .container .js-12 section .navigation img {
 body .container .js-12 section .navigation img:hover {
   width: 200px;
 }
+body .container .js-13 {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+  background: url("../img/js-13/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+body .container .js-13 .box {
+  position: absolute;
+  background: url(../img/js-13/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
 body .header-js2 {
   position: absolute;
   top: 0;
