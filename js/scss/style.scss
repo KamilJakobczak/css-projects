@@ -522,6 +522,113 @@ body {
 					background-attachment: fixed;
 				}
 			}
+			&-15 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 500px;
+				width: 100%;
+				background-color: #539381;
+				.menu {
+					display: flex;
+					gap: 6px;
+					.user {
+						position: relative;
+						background-color: white;
+						height: 70px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 10px;
+						gap: 10px;
+						padding: 10px;
+						.details {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							h3 {
+								font-weight: 600;
+								line-height: 1.1em;
+							}
+							p {
+								font-weight: 500;
+								font-size: 0.8em;
+								color: rgba(0, 0, 0, 0.6);
+							}
+						}
+					}
+					.imgBox {
+						position: relative;
+						width: 50px;
+						height: 50px;
+						border-radius: 6px;
+						overflow: hidden;
+						img {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+					.navigation {
+						position: relative;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 40px;
+						height: 70px;
+						border-radius: 10px;
+						background-color: white;
+						cursor: pointer;
+						transition: 0.5s;
+						span {
+							position: absolute;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 6px;
+							height: 6px;
+							line-height: 5px;
+							background-color: #222;
+							border-radius: 50%;
+							transition: 0.5s;
+							a {
+								font-size: 0em;
+							}
+							&:nth-child(1) {
+								transform: translateY(-12px);
+							}
+							&:nth-child(3) {
+								transform: translateY(12px);
+							}
+						}
+						&.active {
+							width: 200px;
+							span {
+								width: 50px;
+								height: 50px;
+								transition: 0.5s;
+								a {
+									font-size: 1.25em;
+									color: white;
+									transition: 0.5s;
+								}
+								&:nth-child(1) {
+									transform: translateX(-60px);
+								}
+								&:nth-child(3) {
+									transform: translateX(60px);
+								}
+								&:hover {
+									background-color: #1c33a5;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
