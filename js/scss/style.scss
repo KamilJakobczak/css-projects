@@ -629,6 +629,70 @@ body {
 					}
 				}
 			}
+			&-16 {
+				height: 800px;
+				width: 100%;
+				background-color: #539381;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.navigation {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+					width: 70px;
+					height: 70px;
+					background-color: #a4056c;
+					border-radius: 10px;
+					cursor: pointer;
+					transition: 0.5s;
+					transition-delay: 0.8s;
+					&.active {
+						width: 200px;
+						height: 200px;
+						transition-delay: 0s;
+						span {
+							transform: translate(
+								calc(60px * var(--x)),
+								calc(60px * var(--y))
+							);
+							width: 45px;
+							height: 45px;
+							background-color: #539381;
+							ion-icon {
+								font-size: 1.35em;
+								color: white;
+							}
+							&:hover {
+								ion-icon {
+									color: #a4056c;
+								}
+							}
+						}
+					}
+					span {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						transform: translate(
+							calc(14px * var(--x)),
+							calc(14px * var(--y))
+						);
+						width: 7px;
+						height: 7px;
+						background-color: white;
+						border-radius: 50%;
+						transition: 0.5s;
+						transition-delay: calc(0.1s * var(--i));
+						ion-icon {
+							font-size: 0em;
+							transition: 0.5s;
+						}
+					}
+				}
+			}
 		}
 	}
 

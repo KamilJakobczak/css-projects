@@ -588,6 +588,62 @@ body .container .js-15 .menu .navigation.active span:nth-child(3) {
 body .container .js-15 .menu .navigation.active span:hover {
   background-color: #1c33a5;
 }
+body .container .js-16 {
+  height: 800px;
+  width: 100%;
+  background-color: #539381;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .js-16 .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #a4056c;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-delay: 0.8s;
+}
+body .container .js-16 .navigation.active {
+  width: 200px;
+  height: 200px;
+  transition-delay: 0s;
+}
+body .container .js-16 .navigation.active span {
+  transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+  width: 45px;
+  height: 45px;
+  background-color: #539381;
+}
+body .container .js-16 .navigation.active span ion-icon {
+  font-size: 1.35em;
+  color: white;
+}
+body .container .js-16 .navigation.active span:hover ion-icon {
+  color: #a4056c;
+}
+body .container .js-16 .navigation span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(calc(14px * var(--x)), calc(14px * var(--y)));
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+}
+body .container .js-16 .navigation span ion-icon {
+  font-size: 0em;
+  transition: 0.5s;
+}
 body .header-js2 {
   position: absolute;
   top: 0;
